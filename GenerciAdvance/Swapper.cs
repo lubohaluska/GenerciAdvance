@@ -17,6 +17,7 @@ namespace GenerciAdvance
             a = b;
             b = c;
 
+
         }
     }
 }
