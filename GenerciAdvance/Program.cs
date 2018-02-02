@@ -49,6 +49,9 @@ namespace GenerciAdvance
             SpravceAut<Nakladak> spravceNakladaku = new SpravceAut<Nakladak>();
             SpravceAut<Osobak> spravceOsobaku = new SpravceAut<Osobak>();
 
+            spravceOsobaku.ProhodMotory(o1, o2);
+            spravceNakladaku.ProhodMotory(n1, n2);
+
             Console.WriteLine("Vymemene motory nakladaku {0}, {1} kW", n1.VykonMotoru, n2.VykonMotoru);
             Console.WriteLine("Vymemene motory osobaku {0}, {1} kW", o1.VykonMotoru, o2.VykonMotoru);
 
