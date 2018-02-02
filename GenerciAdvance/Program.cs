@@ -37,7 +37,20 @@ namespace GenerciAdvance
             Console.WriteLine("Vymenene texty {0},{1}", s1, s2);
 
 
+            Nakladak n1 = new Nakladak { VykonMotoru = 200 };
+            Nakladak n2 = new Nakladak { VykonMotoru = 1400 };
 
+            Osobak o1 = new Osobak { VykonMotoru = 100 };
+            Osobak o2 = new Osobak { VykonMotoru = 150 };
+
+            Console.WriteLine("Povodne motory nakladaku {0}, {1} kW", n1.VykonMotoru, n2.VykonMotoru);
+            Console.WriteLine("Povodne motory osobaku {0}, {1} kW", o1.VykonMotoru, o2.VykonMotoru);
+
+            SpravceAut<Nakladak> spravceNakladaku = new SpravceAut<Nakladak>();
+            SpravceAut<Osobak> spravceOsobaku = new SpravceAut<Osobak>();
+
+            Console.WriteLine("Vymemene motory nakladaku {0}, {1} kW", n1.VykonMotoru, n2.VykonMotoru);
+            Console.WriteLine("Vymemene motory osobaku {0}, {1} kW", o1.VykonMotoru, o2.VykonMotoru);
 
 
             Console.ReadLine();
